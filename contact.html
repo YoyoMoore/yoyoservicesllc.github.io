@@ -26,23 +26,25 @@
             <div class="contact-grid">
                 <div class="contact-info">
                     <p><strong><i class="fas fa-phone"></i> Phone:</strong> (443) 430-1548</p>
-                    <p><strong><i class="fas fa-envelope"></i> Email:</strong>  <A HREF="mailto:yoyo@yoyoservicesllc.com">yoyo@yoyoservicesllc.com</A> test4</p>
+                    <p><strong><i class="fas fa-envelope"></i> Email:</strong>  <A HREF="mailto:yoyo@yoyoservicesllc.com">yoyo@yoyoservicesllc.com</A> test5</p>
                     <p><strong><i class="fas fa-clock"></i> Hours:</strong> Sun-Thurs: 9am - 9pm | Fri: 9am - 2pm</p>
                 </div>
 
                 <form class="contact-form" action="https://formsubmit.co/57851d003c0ccb0a0d31934503856362" method="POST">
-                    <!-- <input type="hidden" name="access_key" value="0e45e7e0bdc346fa9d11de6b7534a9cb">
+
+                    <!-- e1f19e4c9e0931eb122390140eae2061
+                    <input type="hidden" name="access_key" value="0e45e7e0bdc346fa9d11de6b7534a9cb">
                     <input type="hidden" name="subject" value="Yoyo Services contact form submission"> -->
-                    <input id="name" type="text" placeholder="Your Name" required>
-                    <input id="email" type="email" placeholder="Your Email" required>
-                    <select id="service" required>
+                    <input id="name" name="name" type="text" placeholder="Your Name" required>
+                    <input id="email" name="email" type="email" placeholder="Your Email" required>
+                    <select id="service" name="service" required>
                         <option>Select Service</option>
                         <option>Moving (Local)</option>
                         <option>Moving (Long Distance)</option>
                         <option>Handyman/Repair</option>
                         <option>Sukkah Service</option>
                     </select>
-                    <textarea id="message" placeholder="Tell us about your project..." rows="5"></textarea>
+                    <textarea id="message" name="message"placeholder="Tell us about your project..." rows="5"></textarea>
 
                     <!-- honeypot — bots fill every field -->
                     <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
