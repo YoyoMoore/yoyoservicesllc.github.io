@@ -31,18 +31,18 @@
                 </div>
 
                 <form class="contact-form" action="https://splitforms.com/api/submit" method="POST">
-                      <input type="hidden" name="access_key" value="0e45e7e0bdc346fa9d11de6b7534a9cb">
-                      <input type="hidden" name="subject" value="Yoyo Services contact form submission">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <select>
+                    <input type="hidden" name="access_key" value="0e45e7e0bdc346fa9d11de6b7534a9cb">
+                    <input type="hidden" name="subject" value="Yoyo Services contact form submission">
+                    <input id="name" type="text" placeholder="Your Name" required>
+                    <input id="email" type="email" placeholder="Your Email" required>
+                    <select id="service" required>
                         <option>Select Service</option>
                         <option>Moving (Local)</option>
                         <option>Moving (Long Distance)</option>
                         <option>Handyman/Repair</option>
                         <option>Sukkah Service</option>
                     </select>
-                    <textarea placeholder="Tell us about your project..." rows="5"></textarea>
+                    <textarea id="message" placeholder="Tell us about your project..." rows="5"></textarea>
 
                     <!-- honeypot — bots fill every field -->
                     <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
